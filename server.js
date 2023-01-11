@@ -8,3 +8,15 @@ const port = process.env.PORT
 
 console.log(host)
 console.log(port)
+
+const app = express()
+
+app.get('/', (req, res) => {
+    res.send('Hello, Express')
+})
+
+app.listen(port, host, () => {
+    console.log('Server launched.')
+    console.log(host)
+    console.log(port)
+})
