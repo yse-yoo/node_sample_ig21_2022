@@ -11,6 +11,11 @@ console.log(port)
 
 const app = express()
 
+// Middleware
+//静的コンテンツの配置場所を設定
+app.use(express.static(__dirname + '/public'))
+
+// Routing
 app.get('/', (req, res) => {
     res.send('Hello, Express')
 })
