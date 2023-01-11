@@ -24,6 +24,10 @@ app.get('/profile', (req, res) => {
     res.send('My Profile')
 })
 
+app.post('/auth', (req, res) => {
+    res.send('ログイン認証')
+})
+
 app.listen(port, host, () => {
     console.log('Server launched.')
     console.log(host)
