@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
     res.send('Hello, Express')
 })
 
+app.get('/profile', (req, res) => {
+    res.send('My Profile')
+})
+
 app.listen(port, host, () => {
     console.log('Server launched.')
     console.log(host)
